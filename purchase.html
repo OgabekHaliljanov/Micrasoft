@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление покупки</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1><ion-icon name="logo-windows"></ion-icon>MicraSoft</h1>
+        </div>
+        <a href="cart.html" class="btn-cart-icon">
+            <ion-icon name="arrow-back"></ion-icon>
+        </a>
+    </nav>
+
+    <div class="purchase-container">
+        <h2>Оформление покупки</h2>
+        <form id="purchase-form">
+            <label for="location">Где вы находитесь?</label>
+            <select id="location" name="location" required>
+                <option value="Ташкент">Ташкент</option>
+                <option value="Самарканд">Самарканд</option>
+                <option value="Бухара">Бухара</option>
+                <option value="Навои">Навои</option>
+                <option value="Фергана">Фергана</option>
+                <option value="Коканд">Коканд</option>
+                <!-- Добавьте другие регионы по необходимости -->
+            </select>
+            <button type="submit" class="btn btn-submit">Подтвердить покупку</button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
